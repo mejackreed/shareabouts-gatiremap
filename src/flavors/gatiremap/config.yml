@@ -1,11 +1,11 @@
 # Settings for the app
 app:
   # HTML Title
-  title: Georgia Tire Map
+  title: Georgia Tires
   # Header name
-  name: Georgia Tire Map
+  name: GA Tires
   # Meta description that will show up in Google search results
-  meta_description: _(Georgia Tire Map is a tool for residents to report illegally dumped or abandoned tires)
+  meta_description: _(Georgia Tires is a tool for residents to report illegally dumped or abandoned tires)
 
 # Settings for map and layer configs
 map:
@@ -168,7 +168,7 @@ pages:
   - title: _(About)
     slug: about
     name: about
-    start_page: true
+    #start_page: true
   - title: Download the Data!
     external: true
     url: /download/places.csv
