@@ -35,17 +35,13 @@ place_types:
 # The values map the place type to map icons (defined below).
 place_types:
   tire:
-    default: gray
+    default: tire
     focused: red
     label: _(Tire)
-  park:
-    default: gray
+  trash:
+    default: trash
     focused: red
-    label: _(Park)
-  school:
-    default: gray
-    focused: red
-    label: _(School)
+    label: _(Trash)
 
 # Defines place icons. See http://leaflet.cloudmade.com/reference.html#icon
 # for documention of each property. Any omitted property will be undefined.
@@ -58,6 +54,24 @@ place_type_icons:
     iconAnchor:
       x: 9
       y: 9
+  tire:
+    iconUrl: /static/css/images/dot-fa307d.png
+    iconSize:
+      width: 17
+      height: 18
+    iconAnchor:
+      x: 9
+      y: 9
+
+  trash:
+    iconUrl: /static/css/images/dot-f39914.png
+    iconSize:
+      width: 17
+      height: 18
+    iconAnchor:
+      x: 9
+      y: 9
+
   red:
     iconUrl: /static/css/images/marker-focused.png
     shadowUrl: /static/css/images/marker-shadow.png
@@ -101,7 +115,14 @@ place:
       attrs:
         - key: value
           value: tire
-
+    - prompt: _(Location Type)
+      type: select
+      options:
+        - label: _(Tire)
+          value: tire
+        - label: _(Trash)
+          value: trash
+      name: location_type
       name: location_type
     - prompt: _(Number of Tires)
       label: 'Number of tires:'
